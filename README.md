@@ -11,6 +11,8 @@ let eye2X = 0;
 let eye2Y = 0;
 let ear1X = 0;
 let ear1Y = 0;
+
+
  
 function setup() {
   createCanvas(800, 800);
@@ -19,6 +21,8 @@ function setup() {
   poseNet = ml5.poseNet(video, modelReady);
   poseNet.on('pose', gotPoses);
 }
+
+
 
 function gotPoses(poses) {
   // console.log(poses);
@@ -42,6 +46,8 @@ function gotPoses(poses) {
   }
 }
 
+
+
 function modelReady() {
   console.log('model ready');
 }
@@ -50,6 +56,8 @@ function draw() {
   image(video, 0, 0);
  
   let d = dist(noseX, noseY, eyelX, eyelY, eye2X, eye2Y); // not using right now,but clown nose :0)
+
+
 
   fill(255, 0, 0);
   ellipse(noseX, noseY, 50);
