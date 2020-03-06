@@ -41,8 +41,8 @@ function gotPoses(poses) {
     eyelY = lerp(eyelY, eY, 0.5);
     eye2X = lerp(eye2X, aX, 0.5);
     eye2Y = lerp(eye2Y, aY, 0.5);
-    ear1X = lerp(ear1X, bX, 0.5);
-    ear1Y = lerp(ear1Y, bY
+    //ear1X = lerp(ear1X, bX, 0.5);
+    //ear1Y = lerp(ear1Y, bY
   }
 }
 
@@ -53,7 +53,7 @@ function modelReady() {
 }
 
 function draw() {
-  image(video, 0, 0);
+  //image(video, 0, 0);
  
   let d = dist(noseX, noseY, eyelX, eyelY, eye2X, eye2Y); // not using right now,but clown nose :0)
 
